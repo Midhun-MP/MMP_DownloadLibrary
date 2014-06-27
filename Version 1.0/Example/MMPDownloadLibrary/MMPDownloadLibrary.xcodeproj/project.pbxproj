@@ -1,0 +1,502 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D9DDF7C1194F1EF7008F10D4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DDF7C0194F1EF7008F10D4 /* Foundation.framework */; };
+		D9DDF7C3194F1EF7008F10D4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DDF7C2194F1EF7008F10D4 /* CoreGraphics.framework */; };
+		D9DDF7C5194F1EF7008F10D4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DDF7C4194F1EF7008F10D4 /* UIKit.framework */; };
+		D9DDF7CB194F1EF7008F10D4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D9DDF7C9194F1EF7008F10D4 /* InfoPlist.strings */; };
+		D9DDF7CD194F1EF7008F10D4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D9DDF7CC194F1EF7008F10D4 /* main.m */; };
+		D9DDF7D1194F1EF7008F10D4 /* MMPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D9DDF7D0194F1EF7008F10D4 /* MMPAppDelegate.m */; };
+		D9DDF7D4194F1EF7008F10D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9DDF7D2194F1EF7008F10D4 /* Main.storyboard */; };
+		D9DDF7D7194F1EF7008F10D4 /* MMPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9DDF7D6194F1EF7008F10D4 /* MMPViewController.m */; };
+		D9DDF7D9194F1EF8008F10D4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9DDF7D8194F1EF8008F10D4 /* Images.xcassets */; };
+		D9DDF7E0194F1EF8008F10D4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DDF7DF194F1EF8008F10D4 /* XCTest.framework */; };
+		D9DDF7E1194F1EF8008F10D4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DDF7C0194F1EF7008F10D4 /* Foundation.framework */; };
+		D9DDF7E2194F1EF8008F10D4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DDF7C4194F1EF7008F10D4 /* UIKit.framework */; };
+		D9DDF7EA194F1EF8008F10D4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D9DDF7E8194F1EF8008F10D4 /* InfoPlist.strings */; };
+		D9DDF7EC194F1EF8008F10D4 /* MMPDownloadLibraryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D9DDF7EB194F1EF8008F10D4 /* MMPDownloadLibraryTests.m */; };
+		D9DDF7FB194F1FD7008F10D4 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = D9DDF7F6194F1FD7008F10D4 /* MBProgressHUD.m */; };
+		D9DDF7FC194F1FD7008F10D4 /* MMPDownloadHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D9DDF7F8194F1FD7008F10D4 /* MMPDownloadHelper.m */; };
+		D9DDF7FD194F1FD7008F10D4 /* MMPDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D9DDF7FA194F1FD7008F10D4 /* MMPDownloadManager.m */; };
+		D9DDF7FF194F202C008F10D4 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D9DDF7FE194F202C008F10D4 /* libsqlite3.0.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D9DDF7E3194F1EF8008F10D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9DDF7B5194F1EF6008F10D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9DDF7BC194F1EF7008F10D4;
+			remoteInfo = MMPDownloadLibrary;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D9202B1E195D835E00086B90 /* MMPDownloadConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMPDownloadConstants.h; sourceTree = "<group>"; };
+		D9DDF7BD194F1EF7008F10D4 /* MMPDownloadLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MMPDownloadLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9DDF7C0194F1EF7008F10D4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D9DDF7C2194F1EF7008F10D4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D9DDF7C4194F1EF7008F10D4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D9DDF7C8194F1EF7008F10D4 /* MMPDownloadLibrary-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MMPDownloadLibrary-Info.plist"; sourceTree = "<group>"; };
+		D9DDF7CA194F1EF7008F10D4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D9DDF7CC194F1EF7008F10D4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D9DDF7CE194F1EF7008F10D4 /* MMPDownloadLibrary-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MMPDownloadLibrary-Prefix.pch"; sourceTree = "<group>"; };
+		D9DDF7CF194F1EF7008F10D4 /* MMPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMPAppDelegate.h; sourceTree = "<group>"; };
+		D9DDF7D0194F1EF7008F10D4 /* MMPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMPAppDelegate.m; sourceTree = "<group>"; };
+		D9DDF7D3194F1EF7008F10D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D9DDF7D5194F1EF7008F10D4 /* MMPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MMPViewController.h; sourceTree = "<group>"; };
+		D9DDF7D6194F1EF7008F10D4 /* MMPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMPViewController.m; sourceTree = "<group>"; };
+		D9DDF7D8194F1EF8008F10D4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D9DDF7DE194F1EF8008F10D4 /* MMPDownloadLibraryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MMPDownloadLibraryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9DDF7DF194F1EF8008F10D4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D9DDF7E7194F1EF8008F10D4 /* MMPDownloadLibraryTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MMPDownloadLibraryTests-Info.plist"; sourceTree = "<group>"; };
+		D9DDF7E9194F1EF8008F10D4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D9DDF7EB194F1EF8008F10D4 /* MMPDownloadLibraryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MMPDownloadLibraryTests.m; sourceTree = "<group>"; };
+		D9DDF7F5194F1FD7008F10D4 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		D9DDF7F6194F1FD7008F10D4 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		D9DDF7F7194F1FD7008F10D4 /* MMPDownloadHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMPDownloadHelper.h; sourceTree = "<group>"; };
+		D9DDF7F8194F1FD7008F10D4 /* MMPDownloadHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMPDownloadHelper.m; sourceTree = "<group>"; };
+		D9DDF7F9194F1FD7008F10D4 /* MMPDownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMPDownloadManager.h; sourceTree = "<group>"; };
+		D9DDF7FA194F1FD7008F10D4 /* MMPDownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMPDownloadManager.m; sourceTree = "<group>"; };
+		D9DDF7FE194F202C008F10D4 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D9DDF7BA194F1EF7008F10D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9DDF7FF194F202C008F10D4 /* libsqlite3.0.dylib in Frameworks */,
+				D9DDF7C3194F1EF7008F10D4 /* CoreGraphics.framework in Frameworks */,
+				D9DDF7C5194F1EF7008F10D4 /* UIKit.framework in Frameworks */,
+				D9DDF7C1194F1EF7008F10D4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9DDF7DB194F1EF8008F10D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9DDF7E0194F1EF8008F10D4 /* XCTest.framework in Frameworks */,
+				D9DDF7E2194F1EF8008F10D4 /* UIKit.framework in Frameworks */,
+				D9DDF7E1194F1EF8008F10D4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D9DDF7B4194F1EF6008F10D4 = {
+			isa = PBXGroup;
+			children = (
+				D9DDF7C6194F1EF7008F10D4 /* MMPDownloadLibrary */,
+				D9DDF7E5194F1EF8008F10D4 /* MMPDownloadLibraryTests */,
+				D9DDF7BF194F1EF7008F10D4 /* Frameworks */,
+				D9DDF7BE194F1EF7008F10D4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D9DDF7BE194F1EF7008F10D4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D9DDF7BD194F1EF7008F10D4 /* MMPDownloadLibrary.app */,
+				D9DDF7DE194F1EF8008F10D4 /* MMPDownloadLibraryTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D9DDF7BF194F1EF7008F10D4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D9DDF7FE194F202C008F10D4 /* libsqlite3.0.dylib */,
+				D9DDF7C0194F1EF7008F10D4 /* Foundation.framework */,
+				D9DDF7C2194F1EF7008F10D4 /* CoreGraphics.framework */,
+				D9DDF7C4194F1EF7008F10D4 /* UIKit.framework */,
+				D9DDF7DF194F1EF8008F10D4 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D9DDF7C6194F1EF7008F10D4 /* MMPDownloadLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				D9202B1E195D835E00086B90 /* MMPDownloadConstants.h */,
+				D9DDF7F5194F1FD7008F10D4 /* MBProgressHUD.h */,
+				D9DDF7F6194F1FD7008F10D4 /* MBProgressHUD.m */,
+				D9DDF7F7194F1FD7008F10D4 /* MMPDownloadHelper.h */,
+				D9DDF7F8194F1FD7008F10D4 /* MMPDownloadHelper.m */,
+				D9DDF7F9194F1FD7008F10D4 /* MMPDownloadManager.h */,
+				D9DDF7FA194F1FD7008F10D4 /* MMPDownloadManager.m */,
+				D9DDF7CF194F1EF7008F10D4 /* MMPAppDelegate.h */,
+				D9DDF7D0194F1EF7008F10D4 /* MMPAppDelegate.m */,
+				D9DDF7D2194F1EF7008F10D4 /* Main.storyboard */,
+				D9DDF7D5194F1EF7008F10D4 /* MMPViewController.h */,
+				D9DDF7D6194F1EF7008F10D4 /* MMPViewController.m */,
+				D9DDF7D8194F1EF8008F10D4 /* Images.xcassets */,
+				D9DDF7C7194F1EF7008F10D4 /* Supporting Files */,
+			);
+			path = MMPDownloadLibrary;
+			sourceTree = "<group>";
+		};
+		D9DDF7C7194F1EF7008F10D4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D9DDF7C8194F1EF7008F10D4 /* MMPDownloadLibrary-Info.plist */,
+				D9DDF7C9194F1EF7008F10D4 /* InfoPlist.strings */,
+				D9DDF7CC194F1EF7008F10D4 /* main.m */,
+				D9DDF7CE194F1EF7008F10D4 /* MMPDownloadLibrary-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D9DDF7E5194F1EF8008F10D4 /* MMPDownloadLibraryTests */ = {
+			isa = PBXGroup;
+			children = (
+				D9DDF7EB194F1EF8008F10D4 /* MMPDownloadLibraryTests.m */,
+				D9DDF7E6194F1EF8008F10D4 /* Supporting Files */,
+			);
+			path = MMPDownloadLibraryTests;
+			sourceTree = "<group>";
+		};
+		D9DDF7E6194F1EF8008F10D4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D9DDF7E7194F1EF8008F10D4 /* MMPDownloadLibraryTests-Info.plist */,
+				D9DDF7E8194F1EF8008F10D4 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D9DDF7BC194F1EF7008F10D4 /* MMPDownloadLibrary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9DDF7EF194F1EF8008F10D4 /* Build configuration list for PBXNativeTarget "MMPDownloadLibrary" */;
+			buildPhases = (
+				D9DDF7B9194F1EF7008F10D4 /* Sources */,
+				D9DDF7BA194F1EF7008F10D4 /* Frameworks */,
+				D9DDF7BB194F1EF7008F10D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MMPDownloadLibrary;
+			productName = MMPDownloadLibrary;
+			productReference = D9DDF7BD194F1EF7008F10D4 /* MMPDownloadLibrary.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D9DDF7DD194F1EF8008F10D4 /* MMPDownloadLibraryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9DDF7F2194F1EF8008F10D4 /* Build configuration list for PBXNativeTarget "MMPDownloadLibraryTests" */;
+			buildPhases = (
+				D9DDF7DA194F1EF8008F10D4 /* Sources */,
+				D9DDF7DB194F1EF8008F10D4 /* Frameworks */,
+				D9DDF7DC194F1EF8008F10D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D9DDF7E4194F1EF8008F10D4 /* PBXTargetDependency */,
+			);
+			name = MMPDownloadLibraryTests;
+			productName = MMPDownloadLibraryTests;
+			productReference = D9DDF7DE194F1EF8008F10D4 /* MMPDownloadLibraryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D9DDF7B5194F1EF6008F10D4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MMP;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Midhun;
+				TargetAttributes = {
+					D9DDF7DD194F1EF8008F10D4 = {
+						TestTargetID = D9DDF7BC194F1EF7008F10D4;
+					};
+				};
+			};
+			buildConfigurationList = D9DDF7B8194F1EF6008F10D4 /* Build configuration list for PBXProject "MMPDownloadLibrary" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D9DDF7B4194F1EF6008F10D4;
+			productRefGroup = D9DDF7BE194F1EF7008F10D4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D9DDF7BC194F1EF7008F10D4 /* MMPDownloadLibrary */,
+				D9DDF7DD194F1EF8008F10D4 /* MMPDownloadLibraryTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D9DDF7BB194F1EF7008F10D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9DDF7D9194F1EF8008F10D4 /* Images.xcassets in Resources */,
+				D9DDF7CB194F1EF7008F10D4 /* InfoPlist.strings in Resources */,
+				D9DDF7D4194F1EF7008F10D4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9DDF7DC194F1EF8008F10D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9DDF7EA194F1EF8008F10D4 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D9DDF7B9194F1EF7008F10D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9DDF7FC194F1FD7008F10D4 /* MMPDownloadHelper.m in Sources */,
+				D9DDF7CD194F1EF7008F10D4 /* main.m in Sources */,
+				D9DDF7FD194F1FD7008F10D4 /* MMPDownloadManager.m in Sources */,
+				D9DDF7D1194F1EF7008F10D4 /* MMPAppDelegate.m in Sources */,
+				D9DDF7D7194F1EF7008F10D4 /* MMPViewController.m in Sources */,
+				D9DDF7FB194F1FD7008F10D4 /* MBProgressHUD.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9DDF7DA194F1EF8008F10D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9DDF7EC194F1EF8008F10D4 /* MMPDownloadLibraryTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D9DDF7E4194F1EF8008F10D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9DDF7BC194F1EF7008F10D4 /* MMPDownloadLibrary */;
+			targetProxy = D9DDF7E3194F1EF8008F10D4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D9DDF7C9194F1EF7008F10D4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9DDF7CA194F1EF7008F10D4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D9DDF7D2194F1EF7008F10D4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9DDF7D3194F1EF7008F10D4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D9DDF7E8194F1EF8008F10D4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9DDF7E9194F1EF8008F10D4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D9DDF7ED194F1EF8008F10D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D9DDF7EE194F1EF8008F10D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D9DDF7F0194F1EF8008F10D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MMPDownloadLibrary/MMPDownloadLibrary-Prefix.pch";
+				INFOPLIST_FILE = "MMPDownloadLibrary/MMPDownloadLibrary-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D9DDF7F1194F1EF8008F10D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MMPDownloadLibrary/MMPDownloadLibrary-Prefix.pch";
+				INFOPLIST_FILE = "MMPDownloadLibrary/MMPDownloadLibrary-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D9DDF7F3194F1EF8008F10D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MMPDownloadLibrary.app/MMPDownloadLibrary";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MMPDownloadLibrary/MMPDownloadLibrary-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MMPDownloadLibraryTests/MMPDownloadLibraryTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D9DDF7F4194F1EF8008F10D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MMPDownloadLibrary.app/MMPDownloadLibrary";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MMPDownloadLibrary/MMPDownloadLibrary-Prefix.pch";
+				INFOPLIST_FILE = "MMPDownloadLibraryTests/MMPDownloadLibraryTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D9DDF7B8194F1EF6008F10D4 /* Build configuration list for PBXProject "MMPDownloadLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9DDF7ED194F1EF8008F10D4 /* Debug */,
+				D9DDF7EE194F1EF8008F10D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9DDF7EF194F1EF8008F10D4 /* Build configuration list for PBXNativeTarget "MMPDownloadLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9DDF7F0194F1EF8008F10D4 /* Debug */,
+				D9DDF7F1194F1EF8008F10D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9DDF7F2194F1EF8008F10D4 /* Build configuration list for PBXNativeTarget "MMPDownloadLibraryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9DDF7F3194F1EF8008F10D4 /* Debug */,
+				D9DDF7F4194F1EF8008F10D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D9DDF7B5194F1EF6008F10D4 /* Project object */;
+}
