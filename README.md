@@ -116,3 +116,5 @@ Credits
 =======
 Midhun MP
 midhunmp7@gmail.com
+
+(In this library I'm using [MBProgressHUD](https://github.com/jdg/MBProgressHUD) for displaying the download progress)
