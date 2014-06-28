@@ -49,7 +49,6 @@
 {
     MMPDownloadManager *manager = [[MMPDownloadManager alloc] init];
     [manager setDelegate:self];
-    [manager setAssetsToDownload:asset];
     [manager setDownloadView:self.view];
     [manager downloadAssets];
 }

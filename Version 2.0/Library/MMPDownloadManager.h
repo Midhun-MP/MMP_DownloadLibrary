@@ -61,9 +61,6 @@
 // Holds the delegate object
 @property (nonatomic, weak) id <MMPDownloadManagerDelegate> delegate;
 
-// Holds the assests information, that need to be downloaded
-@property (nonatomic, strong) NSMutableArray *assetsToDownload;
-
 // Holds the View for displaying the progress
 @property (nonatomic, strong) UIView *downloadView;
 

@@ -111,7 +111,6 @@ static MBProgressHUD *hud      = nil;
             [assets addObject:info];
         }
         downloadedCount     = 0;
-        needToDownloadCount = [_assetsToDownload count];
     }
     @catch (NSException *exception)
     {
@@ -127,14 +126,15 @@ static MBProgressHUD *hud      = nil;
     {
         [self updateProgress];
         
-        if ([_assetsToDownload count] > kMMPDefault)
+        if ([assets count] > kMMPDefault)
         {
             NSOperationQueue *queue = [[NSOperationQueue alloc] init];
             queue.maxConcurrentOperationCount = _maxConcurrentDownloads;
             
             NSBlockOperation *completionOperation = [NSBlockOperation blockOperationWithBlock:^{
                 [[NSOperationQueue mainQueue] addOperationWithBlock:^{
-                    [self downloadAssets];
+                    [assets removeAllObjects];
+                    [self hideHUD];
                 }];
             }];
             
@@ -176,7 +176,6 @@ static MBProgressHUD *hud      = nil;
                     _successfullDownloads++;
                     [self updateProgress];
                 }
-                [_assetsToDownload removeObject:helper];
             }
             
             [queue addOperations:completionOperation.dependencies waitUntilFinished:NO];
